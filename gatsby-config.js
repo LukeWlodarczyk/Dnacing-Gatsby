@@ -10,6 +10,11 @@ module.exports = {
         // Url to query from
         url: "https://api-eu-central-1.graphcms.com/v2/ckiphugznbu4m01yygp15fixy/master",
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+      },
+    },
   ]
 };
