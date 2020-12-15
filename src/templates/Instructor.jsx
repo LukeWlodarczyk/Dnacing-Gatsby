@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 
 import styled from 'styled-components';
 
+import { Helmet } from 'react-helmet'
 
 const Wrapper = styled.div`
   display: flex;
@@ -50,6 +51,7 @@ const Instructor = ({
   },
 }) => (
     <Layout>
+      <Helmet title={`Dancing Gatsby - ${instructor.name}`} />
       <Wrapper>
         <img src={instructor.avatar} style={{ width: '200px', height: '200px' }} />
         <Details>

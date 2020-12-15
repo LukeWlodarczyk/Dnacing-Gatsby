@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import styled from 'styled-components';
 import Layout from '../components/Layout';
+import { Helmet } from 'react-helmet';
 
 const Wrapper = styled.div`
   display: flex;
@@ -45,6 +46,7 @@ const Home = () => {
 
   return (
     <Layout>
+      <Helmet title='Dancing Gatsby' />
       <Wrapper>
         {
           danceStyles.map(style => (

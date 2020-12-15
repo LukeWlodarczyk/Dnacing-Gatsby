@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 
 import styled from 'styled-components';
 
+import { Helmet } from 'react-helmet'
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -105,6 +107,7 @@ const DanceStyle = ({
 
   return (
     <Layout>
+      <Helmet title={`Dancing Gatsby - ${danceStyle.name}`} />
       <Wrapper>
         <img src={danceStyle.image} style={{ width: '300px', height: '300px' }} />
         <Details>

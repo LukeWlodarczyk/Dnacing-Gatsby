@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/lukaszwlodarczyk/Desktop/gatsby_f2f/dg-basic-my/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/lukaszwlodarczyk/Desktop/gatsby_f2f/dg-basic-my/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
     }]
