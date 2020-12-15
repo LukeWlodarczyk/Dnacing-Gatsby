@@ -27,6 +27,11 @@ const Name = styled.div`
   color: #0582ff;
 `
 
+const Img = styled.img`
+  width: 250px;
+  height: 250px;
+`
+
 const danceStylesQuery = graphql`
   {
     dance {
@@ -51,7 +56,7 @@ const Home = () => {
         {
           danceStyles.map(style => (
             <LinkBox key={style.name} to={`/styles/${style.name}`}>
-              <img src={style.image} style={{ width: '250px', height: '250px' }} />
+              <Img src={style.image} />
               <Name>{style.name}</Name>
             </LinkBox>
           ))

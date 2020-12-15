@@ -45,6 +45,12 @@ const ListItem = styled.li`
   margin: 5px 0;
 `
 
+
+const Img = styled.img`
+  width: 200px;
+  height: 200px;
+`
+
 const Instructor = ({
   data: {
     dance: { instructor },
@@ -53,7 +59,7 @@ const Instructor = ({
     <Layout>
       <Helmet title={`Dancing Gatsby - ${instructor.name}`} />
       <Wrapper>
-        <img src={instructor.avatar} style={{ width: '200px', height: '200px' }} />
+        <Img src={instructor.avatar} />
         <Details>
           <Name>{instructor.name}</Name>
           <Expierience>{instructor.yearsExperience} years expierience</Expierience>

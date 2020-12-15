@@ -89,6 +89,11 @@ const FormBtn = styled.button`
   }
 `
 
+const Img = styled.img`
+  width: 300px;
+  height: 300px;
+`
+
 const DanceStyle = ({
   data: {
     dance: { danceStyle },
@@ -109,7 +114,7 @@ const DanceStyle = ({
     <Layout>
       <Helmet title={`Dancing Gatsby - ${danceStyle.name}`} />
       <Wrapper>
-        <img src={danceStyle.image} style={{ width: '300px', height: '300px' }} />
+        <Img src={danceStyle.image} />
         <Details>
           <Name>{danceStyle.name}</Name>
           <Description>{danceStyle.description}</Description>
